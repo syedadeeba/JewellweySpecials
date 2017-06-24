@@ -14,7 +14,7 @@ p    {color: hotpink;}
             <h1>Register Now and Get:
 Faster Checkout | New Collection Alerts
 Exclusive Deals</h1>
-            <p class="lead">Please fill in your information below:</p>
+            <p class="lead">Please fill your information below:</p>
         </div>
 
         <form:form action="${pageContext.request.contextPath}/register" method="post"

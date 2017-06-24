@@ -1,7 +1,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
 <%@include file="/WEB-INF/views/template/header.jsp" %>
-
 <style>
 body {background-color: powderblue;}
 h1   {color: blue;}
@@ -10,13 +9,13 @@ p    {color: red;}
 <div class="container-wrapper">
     <div class="container">
         <section>
-            <div class="page-header">
-                <div class="container">
-                    <h1><center>Your shopping Cart</center></h1>
-
-                    </div>
-                </div>
             
+                <div class="container">
+                 <div class="page-header">
+                    <h1><center>Your Shopping Cart</center></h1>
+                  
+                </div>
+            </div>
         </section>
 
         <section class="container" ng-app="cartApp">
@@ -24,8 +23,7 @@ p    {color: red;}
             <div>
                 <a class="btn btn-danger pull-left" ng-click="clearCart()"><span
                         class="glyphicon glyphicon-remove-sign"></span>Clear Cart</a>
-                <a href="<spring:url value="/order/${cartId}"/>"></a>
-                <a href="<spring:url value="/checkout"/>"
+                <a href="<spring:url value="/order/${cartId}"/>"
                    class="btn btn-success pull-right"><span class="glyphicon-shopping-cart glyphicon"></span> Check out
                 </a>
             </div>

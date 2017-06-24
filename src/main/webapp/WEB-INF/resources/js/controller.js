@@ -5,13 +5,13 @@ var cartApp = angular.module ("cartApp", []);
 cartApp.controller("cartCtrl", function ($scope, $http){
 
     $scope.refreshCart = function () {
-        $http.get('/Cosemtics/rest/cart/'+$scope.cartId).success(function (data) {
+        $http.get('/JewellweySpecials/rest/cart/'+$scope.cartId).success(function (data) {
            $scope.cart=data;
         });
     };
 
    $scope.clearCart = function () {
-        $http.put('/Cosemtics/rest/cart/'+$scope.cartId).success(function (data) {
+        $http.put('/JewellweySpecials/rest/cart/'+$scope.cartId).success(function (data) {
             $scope.refreshCart();
     });
    };
@@ -22,13 +22,13 @@ cartApp.controller("cartCtrl", function ($scope, $http){
     };
 
     $scope.addToCart = function addToCart(productId) {
-        $http.put('/Cosemtics/rest/cart/add/'+productId).success(function () {
+        $http.put('/JewellweySpecials/rest/cart/add/'+productId).success(function () {
             alert("Product successfully added to the cart!")
         });
     };
 
     $scope.removeFromCart = function (productId) {
-        $http.put('/Cosemtics/rest/cart/remove/'+productId).success(function (data) {
+        $http.put('/JewellweySpecials/rest/cart/remove/'+productId).success(function (data) {
             $scope.refreshCart();
         });
     };

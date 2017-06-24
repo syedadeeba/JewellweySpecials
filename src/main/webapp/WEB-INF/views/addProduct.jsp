@@ -10,9 +10,9 @@ p    {color: red;}
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Add Product</h1>
+            <h1><center>Add Product</center></h1>
 
-            <p class="lead">Fill the below information to add a product:</p>
+            
         </div>
 
         <form:form action="${pageContext.request.contextPath}/admin/product/addProduct" method="post"

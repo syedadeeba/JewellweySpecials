@@ -70,14 +70,14 @@ p    {color: red;}
     <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-            <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=$" />"
+            <a class="btn btn-default" href="<c:url value="product/viewProduct/8" />"
                role="button">
                 <img class="img-circle" src="<c:url value="/resources/images/img1.jpg" />" alt=" " width="140" height="140"></a>
         </div><!-- /.col-lg-4 -->
         <br>
        <div class="row">
         <div class="col-lg-4" >
-            <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=$" />"
+            <a class="btn btn-default" href="<c:url value="product/viewProduct/9" />"
                role="button">
                 <img class="img-circle" src="<c:url value="/resources/images/img2.jpg" />" alt=" " width="140" height="140"></a>
 
@@ -87,7 +87,7 @@ p    {color: red;}
 <br>
          <div class="row">
          <div class="col-lg-4">
-            <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=$" />"
+            <a class="btn btn-default" href="<c:url value="product/viewProduct/7" />"
                role="button">
                 <img class="img-circle" src="<c:url value="/resources/images/img3.jpg" />" alt=" " width="140" height="140"></a>
         </div><!-- /.col-lg-4 -->

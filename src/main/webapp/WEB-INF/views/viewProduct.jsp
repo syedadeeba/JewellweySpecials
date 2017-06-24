@@ -18,10 +18,8 @@ zoomWindowFadeOut: 750
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>Product Detail</h1>
+            <h1><center>Product Detail</center></h1>
 
-            <p class="lead">Here is the detail information of the product!
-            </p>
         </div>
 
         <div class="container" ng-app = "cartApp">
@@ -43,7 +41,7 @@ zoomWindowFadeOut: 750
                     <p>
                         <strong>Condition</strong> : ${product.productCondition}
                     </p>
-                    <h4>${product.productPrice}</h4>
+                    <h4>${product.productPrice} </h4>
 
                     <br>
 
@@ -54,7 +52,7 @@ zoomWindowFadeOut: 750
                     </c:if>
 
                     <p ng-controller="cartCtrl">
-                        <a href="<c:url value="/product/productList/all" />" class="btn btn-default">Back</a>
+                        <a href="<c:url value="product/productList/all" />" class="btn btn-default">Back</a>
                         <a href="#" class="btn btn-warning btn-large"
                            ng-click="addToCart('${product.productId}')"><span
                                 class="glyphicon glyphicon-shopping-cart"></span>Order
@@ -80,4 +78,4 @@ zoomWindowFadeOut: 750
   crossorigin="anonymous"></script>
 <script src='jquery.elevateZoom-2.1.0.min.js'></script>	  
         <script src="<c:url value="/resources/js/controller.js" /> "></script>
-       
+    
