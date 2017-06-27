@@ -31,7 +31,7 @@ p    {color: red;}
                 <th>Category</th>
                 <th>Condition</th>
                 <th>Price</th>
-                
+                <th>Stock</th>
                 <th>Action</th>
             </tr>
             </thead>
@@ -43,6 +43,7 @@ p    {color: red;}
                     <td>${product.productCategory}</td>
                     <td>${product.productCondition}</td>
                     <td>${product.productPrice} </td>
+                    <td>${product.unitInStock}</td>
                     <td><a href="<spring:url value="/product/viewProduct/${product.productId}" />"
                     ><span class="glyphicon glyphicon-info-sign"></span></a></td>
                 </tr>
